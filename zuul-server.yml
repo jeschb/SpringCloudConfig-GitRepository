@@ -8,3 +8,11 @@ zuul:
       path: /echo/**
       url: http://localhost:8091
       serviceId: echo_service_id
+    discount-service:
+      path: /discount/**
+      url: http://localhost:5000/getDiscount
+      serviceId: discount_service_id
+    payment-service:
+      path: /payment/**
+      url: http://localhost:5001/payment
+      serviceId: payment_service_id
